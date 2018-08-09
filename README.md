@@ -12,7 +12,6 @@ Work remaining:
 
 * [Node.js 8.11.3 or newer](https://nodejs.org/en/download/)
 * Serverless Inc CLI (sls)
-* Docker 17.05+
 * Gestalt Platform & Fog CLI
 
 Installation:
@@ -25,30 +24,26 @@ npm i -g serverless
 
 * Get the Gestalt CLI:
 
-> Note: until 0.6.9 of the CLI is released you will need to rebuild it from source. `git clone https://github.com/gestalt/fog` and `cd fog && ./build_redist.sh`
-
-```
-$ curl -sSL https://cli.gestalt.com | sudo sh
-```
+https://github.com/GalacticFog/gestalt-fog-cli
 
 Or install via npm `npm install fog-cli`.
 
 * Get gestalt
 
-You can deploy gestalt locally or remotely with Docker Swarm or Kubernetes. [See the documentation](https://docs.gestalt.com/)
+You can deploy gestalt locally using Docker CE. [See the documentation](http://docs.galacticfog.com/install/kubernetes/readme_docker_ce_for_desktop/)(https://docs.gestalt.com/)
 
 ## Getting started
 
 * Get this plugin
 
 ```
-$ git clone https://github.com/gestalt/serverless-gestalt
+$ git clone https://github.com/GalacticFog/serverless-gestalt
 ```
 
 Link the plugin so it's available to Node:
 
 ```
-$ ./prep.sh
+$ ./install.sh
 ```
 
 * Test the happy-path: build/deploy/list/invoke/remove
@@ -61,11 +56,11 @@ $ ./install-plugin.sh
 
 ```
 sls deploy
-sls deploy function -f <your-function>
 ```
 ### In progess
 
 ```
+sls deploy function -f <your-function>
 sls package
 sls deploy list
 sls invoke -f <your-function> -d <your-data> # -d flag optional
