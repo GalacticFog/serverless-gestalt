@@ -1,9 +1,5 @@
 This is an Gestalt plugin for the Serverless Inc framework.
 
-# Were you looking for Gestalt?
-
-You are probably looking for [Gestalt - gestalt/faas](https://github.com/gestalt/faas).
-
 # serverless-gestalt
 Work remaining:
 
