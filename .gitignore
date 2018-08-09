@@ -1,0 +1,13 @@
+.DS_Store
+thumbnail
+
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+driver
+master.zip
+templates
