@@ -1,6 +1,6 @@
 #!/bin/sh
 
 echo "Installing plugin"
-yarn install
+npm install
 
 npm link serverless-gestalt

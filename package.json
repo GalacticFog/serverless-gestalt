@@ -2,6 +2,10 @@
   "name": "serverless-gestalt",
   "version": "0.1.0",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GalacticFog/serverless-gestalt"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,7 +13,6 @@
   "author": "Galactic Fog Team",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0",
     "bluebird": "^3.5.0",
     "extract-zip": "^1.6.5",
     "laser-execute": "^0.0.25",

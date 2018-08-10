@@ -17,6 +17,8 @@ Work remaining:
 Installation:
 
 * Serverless Inc CLI (sls)
+Currently you need a local build of serverless
+
 
 ```
 npm i -g serverless
@@ -57,7 +59,7 @@ $ ./install-plugin.sh
 ```
 sls deploy
 ```
-### In progess
+### In progress
 
 ```
 sls deploy function -f <your-function>

@@ -5,9 +5,9 @@
 
 const GestaltProvider = require('./provider');
 const GestaltDeploy = require('./deploy');
-const GestaltRemove = require('./remove');
-const GestaltInvoke = require('./invoke');
-const GestaltPackage = require('./pack');
+// const GestaltRemove = require('./remove');
+// const GestaltInvoke = require('./invoke');
+// const GestaltPackage = require('./pack');
 
 class GestaltIndex {
 	constructor(serverless, options) {
@@ -17,9 +17,9 @@ class GestaltIndex {
 
 		this.serverless.pluginManager.addPlugin(GestaltProvider);
 		this.serverless.pluginManager.addPlugin(GestaltDeploy);
-		this.serverless.pluginManager.addPlugin(GestaltRemove);
-		this.serverless.pluginManager.addPlugin(GestaltInvoke);
-		this.serverless.pluginManager.addPlugin(GestaltPackage);
+		// this.serverless.pluginManager.addPlugin(GestaltRemove);
+		// this.serverless.pluginManager.addPlugin(GestaltInvoke);
+		// this.serverless.pluginManager.addPlugin(GestaltPackage);
 	}
 }
 

@@ -12,11 +12,7 @@ cd driver
 serverless install --url \
   https://github.com/GalacticFog/serverless-gestalt-hello-world \
   --name gestalt-hello-world
-
-serverless install --file \
-  gestalt-hello-world \
-  --name gestalt-hello-world 
-
+  
 cd gestalt-hello-world
 
 # Run the workflow
