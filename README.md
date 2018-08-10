@@ -45,13 +45,13 @@ $ git clone https://github.com/GalacticFog/serverless-gestalt
 Link the plugin so it's available to Node:
 
 ```
-$ ./install.sh
+$ npm run install
 ```
 
 * Test the happy-path: build/deploy/list/invoke/remove
 
 ```
-$ ./install-plugin.sh
+$ npm test
 ```
 
 ## Supported commands
