@@ -56,8 +56,8 @@ class GestaltDeploy {
 		return new BbPromise(resolve => {
 
 			const faasCli = spawn('fog', [
-				'deploy',
 				'service',
+				'deploy',
 				'-f', 'serverless.yml'
 			]);
 
@@ -73,8 +73,8 @@ class GestaltDeploy {
 	deploySingleFunction() {
 		return new BbPromise(resolve => {
 			const faasCli = spawn('fog', [
-				'deploy',
 				'service',
+				'deploy',
 				'-f', 'serverless.yml',
 				'--filter', this.options.function
 			]);

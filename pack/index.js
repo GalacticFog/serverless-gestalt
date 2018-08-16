@@ -37,8 +37,12 @@ class GestaltPackage {
 
 			_.each(this.serverless.service.functions, (description, name) => {
 				this.serverless.cli.log('Attempting to package ' + name);
-				// const faasCli = spawn('npm', ['install']);
-				const faasCli = spawn('fog', ['pack', '-f', './serverless.yml']);
+
+				const faasCli = spawn('fog', [
+					'service',
+					'package',
+					'-f', 'serverless.yml'
+				]);
 
 				promisify(faasCli)
 					.then(res => this.serverless.cli.log(`Function ${name} has been packaged`))
