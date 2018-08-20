@@ -33,7 +33,7 @@ class GestaltPackage {
 	packageFunction() {
 		return new BbPromise(resolve => {
 
-			this.serverless.cli.log('Running packageFunction');
+			this.serverless.cli.log('Running Gestalt packageFunction');
 
 			_.each(this.serverless.service.functions, (description, name) => {
 				this.serverless.cli.log('Attempting to package ' + name);
@@ -41,7 +41,7 @@ class GestaltPackage {
 				const faasCli = spawn('fog', [
 					'service',
 					'package',
-					'-f', 'serverless.yml'
+					'-f', 'serverless.yml',
 				]);
 
 				promisify(faasCli)

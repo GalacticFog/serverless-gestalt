@@ -16,7 +16,7 @@ class GestaltDeploy {
 		this.provider = this.serverless.getProvider('gestalt');
 		this.commands = {
 			deploy: {
-				usage: 'Deploy and Gestalt functions',
+				usage: 'Deploy Gestalt functions',
 				lifecyleEvents: [
 					'deploy'
 				],
